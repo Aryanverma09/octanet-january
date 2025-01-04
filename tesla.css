@@ -96,7 +96,7 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .nav-links {
         position: fixed;
         top: 0;
@@ -211,15 +211,15 @@ body {
     }
 
     .model.second {
-        background-image: url('Homepage-Model-Y-Mobile.avif');
+        background-image: url('Homepage-Model-Y-Mobile-US-v2.avif');
     }
 
     .model.third {
-        background-image: url('Homepage-Model-3-Mobile.avif');
+        background-image: url('Homepage-Model-3-Mobile-US.avif');
     }
 
     .model.fourth {
-        background-image: url('Homepage-Model-X-Mobile.avif');
+        background-image: url('Homepage-Model-X-Mobile-US.avif');
     }
 
     .model-content h1, .hero-content h1 {
