@@ -1,0 +1,242 @@
+/* Reset and Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation Styles */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-icons i:hover {
+    color: #3E6AE1;
+    transform: scale(1.2);
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.hamburger.toggle span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.toggle span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 700px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Hero and Model Sections */
+.hero, .model {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background-image: url('Homepage-APR-Promo-Hero-Desktop-v3.avif');
+}
+
+.model.second {
+    background-image: url('Homepage-Model-Y-Desktop-US-v2.avif');
+}
+
+.model.third {
+    background-image: url('Homepage-Model-3-Desktop-US.avif');
+}
+
+.model.fourth {
+    background-image: url('Homepage-Model-X-Desktop-US.avif');
+}
+
+.model-content, .hero-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.model-content h1, .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.model-content h2, .model-content h3, .model-content h4,
+.hero-content h3, .hero-content h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn.primary {
+    background-color: #3E6AE1;
+    color: #fff;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn.primary:hover {
+    background-color: #2a52c0;
+    transform: translateY(-3px);
+}
+
+.btn.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Responsive Background Images */
+@media (max-width: 700px) {
+    .hero {
+        background-image: url('Homepage-APR-Promo-Hero-Mobile-v3.avif');
+    }
+
+    .model.second {
+        background-image: url('Homepage-Model-Y-Mobile.avif');
+    }
+
+    .model.third {
+        background-image: url('Homepage-Model-3-Mobile.avif');
+    }
+
+    .model.fourth {
+        background-image: url('Homepage-Model-X-Mobile.avif');
+    }
+
+    .model-content h1, .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .model-content h2, .model-content h3, .model-content h4,
+    .hero-content h3, .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}

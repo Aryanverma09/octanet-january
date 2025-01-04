@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESLA</title>
+    <link rel="stylesheet" href="tesla.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optimized Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/e9b156014c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="logo">
+            <h1>T E S L A</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Vehicles</a></li>
+            <li><a href="#">Energy</a></li>
+            <li><a href="#">Charging</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">We, Robot</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fa-regular fa-circle-question" title="Help"></i>
+            <i class="fa-solid fa-globe" title="Language"></i>
+            <i class="fa-regular fa-user" title="Account"></i>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero first">
+        <div class="hero-content">
+            <h1>$299/mo Leasing</h1>
+            <div class="buttons">
+                <button class="btn primary">Order Model 3</button>
+                <button class="btn secondary">Order Model Y</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Sections -->
+    <section class="model second">
+        <div class="model-content">
+            <h1>Model Y</h1>
+            <h3>$299/mo Leasing</h3>
+            <h2>From $31,490</h2>
+            <div class="buttons">
+                <button class="btn primary">Order Now</button>
+                <button class="btn secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="model third">
+        <div class="model-content">
+            <h1>Model 3</h1>
+            <h4>$299/mo Leasing</h4>
+            <h3>From $31,490</h3>
+            <div class="buttons">
+                <button class="btn primary">Order Now</button>
+                <button class="btn secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="model fourth">
+        <div class="model-content">
+            <h1>Model X</h1>
+            <h3>From $65,990</h3>
+            <h4>After Federal Tax Credit $7,500</h4>
+            <h2>Est. Gas Savings $6,500</h2>
+            <div class="buttons">
+                <button class="btn primary">Order Now</button>
+                <button class="btn secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript for Mobile Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
+
