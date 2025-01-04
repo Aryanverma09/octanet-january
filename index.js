@@ -6,5 +6,5 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('toggle');
 });
 
-// Smooth scrolling
+
 

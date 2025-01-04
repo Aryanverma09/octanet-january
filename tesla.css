@@ -392,16 +392,21 @@ body {
 
     .model-content h1, .hero-content h1 {
         font-size: 2rem;
+        
     }
 
     .model-content h2, .model-content h3, .model-content h4,
     .hero-content h3, .hero-content h2 {
         font-size: 1rem;
+        
     }
 
     .buttons {
         flex-direction: row;
         gap: 0.5rem;
+    }
+    .nav-icons{
+        display: none;
     }
 
     .btn {
