@@ -7,3 +7,4 @@ hamburger.addEventListener('click', () => {
 });
 
 // Smooth scrolling
+
