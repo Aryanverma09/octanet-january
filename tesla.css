@@ -147,6 +147,9 @@ body {
 .model.fourth {
     background-image: url('Homepage-Model-X-Desktop-US.avif');
 }
+.model.model.fifth {
+    background-image: url('Homepage-Model-S-Desktop-US.avif');
+}
 
 .model-content, .hero-content {
     text-align: center;
@@ -220,6 +223,9 @@ body {
 
     .model.fourth {
         background-image: url('Homepage-Model-X-Mobile-US.avif');
+    }
+    .model.fifth {
+        background-image: url('Homepage-Model-S-Mobile-US.avif');
     }
 
     .model-content h1, .hero-content h1 {
