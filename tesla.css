@@ -96,7 +96,7 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .nav-links {
         position: fixed;
         top: 0;
